@@ -10,9 +10,6 @@ RUN dpkg -i chronograf_${CHRONOGRAF_VERSION}_amd64.deb && rm chronograf_${CHRONO
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
-ENV INFLUXDB_PROTO=http
-ENV INFLUXDB_HOST=localhost
-ENV INFLUXDB_PORT=8086
-
 EXPOSE 80
+VOLUME ["/data"]
 CMD [ "/run.sh" ]

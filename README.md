@@ -12,14 +12,6 @@ Docker Image for [InfluxDB Chronograf](https://influxdb.com/chronograf/index.htm
 docker run -t jbye/chronograf
 ```
 
-## Configuration
-
-| Environment Variable    | Description                                               
-|-------------------------|------------------------------------------------------
-| `INFLUXDB_PROTO`        | InfluxDB logging protocol (default `http`)
-| `INFLUXDB_HOST`         | InfluxDB host (default `localhost`)
-| `INFLUXDB_PORT`         | InfluxDB port (default `8086`)
-
 ## Tags
 
 - 0.4.0
