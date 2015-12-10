@@ -9,7 +9,8 @@ RUN dpkg -i chronograf_${CHRONOGRAF_VERSION}_amd64.deb && rm chronograf_${CHRONO
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
+COPY config.toml /etc/chronograf.toml
 
-EXPOSE 80
+EXPOSE 10000
 VOLUME ["/data"]
 CMD [ "/run.sh" ]
