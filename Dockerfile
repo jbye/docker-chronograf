@@ -1,7 +1,7 @@
 FROM debian:jessie
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV CHRONOGRAF_VERSION 0.4.0
+ENV CHRONOGRAF_VERSION 0.10.0
 
 RUN apt-get update && apt-get install -y wget
 RUN wget https://s3.amazonaws.com/get.influxdb.org/chronograf/chronograf_${CHRONOGRAF_VERSION}_amd64.deb
