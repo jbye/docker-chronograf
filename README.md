@@ -15,6 +15,7 @@ docker run -t jbye/chronograf
 ## Tags
 
 - latest
+- 0.13
 - 0.10.0
 - 0.4.0
 
